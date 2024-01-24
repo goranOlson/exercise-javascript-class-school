@@ -1,3 +1,5 @@
+# Exercise Javascript Class School
+
 ## Skolan - Öva på att använda klasser i JS
 
 Denna uppgift går ut på att skapa olika typer av klasser. Ni ska skapa en skola, som kommer att innehålla lärare som undervisar i kurser som läses utav studenter, så lite olika klasser innehållandes olika typer av data och även funktioner för att de olika typer av klasserna ska kunna interagera med varandra. Det blir en rätt lång js-fil som ni får skriva men det får ni bara acceptera. Man kan även dela upp koden i olika filer, en klass per fil till exempel men då får man se till att alla JS-filer importeras in i rätt ordning i er HTML-fil. Övningen är till för att ni ska lära er klass-syntaxen och bekanta er med styrkorna med att använda klasser! Användning av klasser är det som oftst kallas för objektorienterad programmering.
