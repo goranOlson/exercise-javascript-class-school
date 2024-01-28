@@ -25,7 +25,7 @@ class Subject {
   }
 }
 ```
-
+  
 3.  Skapa en klass för studenter, instansvariablerna ska vara name, age, gender och subjects som en tom array.
 
 4.  Skapa en klass lärare med instansvariablerna name och subjects som en tom array.
