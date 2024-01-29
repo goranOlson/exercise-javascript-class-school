@@ -124,17 +124,47 @@ function displayAllStudents() {
 
 // displayAllStudents();
 
-// function displayAllSubjectsOfStudent(student) {
-//     let nbrSubjects = -1;
+function displayAllSubjectsOfStudent(student) {
+    let nbrSubjects = -1;
 
-//     if (student) {
-//         const arr = student.subjects.map( (s) => s.name);
-//         nbrSubjects = arr.length;
-//         console.log(arr);
-//     } 
+    if (student) {
+        const arr = student.subjects.map( (s) => s.name);
+        nbrSubjects = arr.length;
+        console.log(arr);
+    } 
 
-//     return nbrSubjects;
-// }
+    return nbrSubjects;
+}
 
-// let nbrSubjects = displayAllSubjectsOfStudent(adam);
-// // console.log('adams subjects: ' + nbrSubjects);
+// const nbrSubjects = displayAllSubjectsOfStudent(adam);
+//  console.log('adams subjects: ' + nbrSubjects);
+
+function displayAllStudentsEnlistedToSubject(subject) {
+    let nbrStudents = -1;
+
+    if (subject) {
+        const arr = subject.students.map( (s) => s.name);
+        nbrStudents = arr.length;
+        console.log(arr);
+    } 
+
+    return nbrStudents;
+}
+// const nbrStudents = displayAllStudentsEnlistedToSubject(biology);
+// console.log('nbr students in biology: ' +  nbrStudents);
+
+function displayAllTeachers(school) {
+    let nbrTeachers = -1;
+
+    if (school) {
+        const arr = school.teachers.map((t) => t.name);
+        nbrTeachers = arr.length;
+        console.log(arr);
+    } 
+
+    return nbrTeachers;
+}
+// const nbrTeachers = displayAllTeachers(lexicon);
+//  console.log('nbr of techers: ' + nbrTeachers);
+
+
