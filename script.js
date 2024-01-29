@@ -82,9 +82,9 @@ const diana = new Student('diana', 12, 'female');
 const erik = new Student('erik', 22, 'male');
 // console.log(erik);
 
-const niklas = new Teacher('niklas');
-const thomas = new Teacher('thomas');
-// console.log(thomas);
+const niklas = new Teacher('niklas', lexicon);
+const thomas = new Teacher('thomas', lexicon);
+//  console.log(thomas);
 
 lexicon.addTeacher(niklas);
 lexicon.addTeacher(thomas);
@@ -117,7 +117,7 @@ erik.enlistToSubject(science);
 function displayAllStudents() {
     const students = lexicon.students;
     
-    for (const s of students) {
+    for (const s of students) {  // Display
         console.log(`${s.name}, ${s.age}, ${s.gender}, subjects: ${s.subjects.map((s) => s.name).join(", ") }`);
     }
 }
@@ -130,7 +130,7 @@ function displayAllSubjectsOfStudent(student) {
     if (student) {
         const arr = student.subjects.map( (s) => s.name);
         nbrSubjects = arr.length;
-        console.log(arr);
+        console.log(arr);  // Display
     } 
 
     return nbrSubjects;
@@ -145,7 +145,7 @@ function displayAllStudentsEnlistedToSubject(subject) {
     if (subject) {
         const arr = subject.students.map( (s) => s.name);
         nbrStudents = arr.length;
-        console.log(arr);
+        console.log(arr);  // Display
     } 
 
     return nbrStudents;
@@ -159,7 +159,7 @@ function displayAllTeachers(school) {
     if (school) {
         const arr = school.teachers.map((t) => t.name);
         nbrTeachers = arr.length;
-        console.log(arr);
+        console.log(arr); // Display
     } 
 
     return nbrTeachers;
@@ -167,4 +167,6 @@ function displayAllTeachers(school) {
 // const nbrTeachers = displayAllTeachers(lexicon);
 //  console.log('nbr of techers: ' + nbrTeachers);
 
-
+/* 17 Set grades */
+// thomas.setGrades(science);
+// console.log(lexicon.grades);

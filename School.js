@@ -6,6 +6,7 @@ class School {
       this.city = city;
       this.students = [];
       this.teachers = [];
+      this.grades = [];
     }
 
     addTeacher(teacher) {
@@ -46,6 +47,11 @@ class School {
           tmpStudent.quitSubject(s);  // Remove subject from student
         }
       }
+    }
+
+    addGrade(gradeObject) {
+      // object: subjectName, studentName, grade, teacherName
+      this.grades.push(gradeObject); 
     }
 
   }
